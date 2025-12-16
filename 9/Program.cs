@@ -17,8 +17,12 @@ namespace _9
             {
                 if (char.IsLetter(b))
                 {
-                    char nov = (char)(((b - 'a' + 3) % 26) + 'a');
-                    sb.Append(nov);
+                    char f = (char)(b + 3);
+                    if(f > 'z')
+                    {
+                        f = (char)(f - 26);
+                    }
+                    sb.Append(f);
                 }
                 else
                     sb.Append(b);

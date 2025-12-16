@@ -18,7 +18,7 @@ namespace _7
                     sb.AppendLine($"{i} * {j} = {i *j}");   
                 }
             }
-            Console.WriteLine( sb.ToString());
+            Console.WriteLine(sb.ToString());
         }
     }
 }
